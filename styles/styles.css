@@ -9,13 +9,13 @@ body {
   background-size: cover;
 }
 
-body{
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-footer{
+footer {
   margin-top: auto;
 }
 
@@ -36,23 +36,9 @@ footer{
   color: black;
 }
 
-.aboutme {
-  border: 5px solid black;
-  display: flex;
-  justify-content: center;
-  margin: 1px;
-  text-align: center;
-  padding: 14px 16px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  background-color: #333;
-  overflow: hidden;
-  background-color: rgb(21, 26, 34);
-}
-
 .footer {
   font-size: 12px;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -60,7 +46,7 @@ footer{
   color: white;
   text-align: center;
 }
-  
+
 a {
   text-decoration: none;
 }
@@ -75,7 +61,11 @@ span {
   top: 0%;
   left: 1%;
   font-size: 18px;
+}
+
+.terminal {
   background: #333;
+  top: -25px;
   width: 600px;
   height: 300px;
   margin: auto;
@@ -85,9 +75,22 @@ span {
   box-shadow: 10px 20px;
 }
 
-.projects{
+.overlay1 {
+  background: #333;
+  top: 20px;
+  left: 500px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 10px 20px;
+}
+
+.projects {
   position: absolute;
-  top: 0%;
+  top: -50px;
   left: 70%;
   background: #333;
   width: 400;
@@ -97,34 +100,16 @@ span {
   border: 1px solid black;
   border-radius: 6px;
   box-shadow: 10px 20px;
-
 }
 
-.tux{
+.tux {
   position: absolute;
   top: 80%;
   left: 90%;
 }
 
-.overlay1 {
-  z-index: 9;
-  margin: 30px;
-  background: #333;
-  background: #333;
-  position: absolute;
-  top: 100px;
-  left: 500px;
-  width: 800px;
-  height: 500px;
-  margin: auto;
-  margin-top: 100px;
-  border: 1px solid black;
-  border-radius: 6px;
-  box-shadow: 10px 20px;
-}
-
 .titlebar {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   text-align: center;
   background-color: black;
@@ -235,10 +220,10 @@ span {
   display: flex;
   color: white;
   padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   font-weight: bolder;
-}  
+}
 
 h3 {
   margin-top: 0px;
@@ -246,31 +231,32 @@ h3 {
   font-weight: bolder;
 }
 
-.flex-terminal{
+.flex-terminal {
   color: green;
 }
 
-.profile{
+.profile {
   color: black;
   background-color: rgb(104, 104, 104);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
   text-align: center;
   font-weight: bold;
   margin: 20 auto;
   padding: 10px;
   position: relative;
-  width: 500px;
-  height: 350px;
+  width: 400px;
+  height: 320px;
 }
 
-.links{
-  font-family: 'Courier New', Courier, monospace;
+.links {
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
 }
 
-.pointer{
+.pointer {
   width: 20px;
   height: 20px;
 }
