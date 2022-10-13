@@ -1,18 +1,9 @@
-/* Add a black background color to the top navigation */
-
 body {
   background-color: black;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
-  height: 100%;
   margin: 0;
   background-size: cover;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 footer {
@@ -31,7 +22,6 @@ footer {
 }
 
 .topnav a:hover {
-  border: 5px solid black;
   background-color: white;
   color: black;
 }
@@ -65,22 +55,9 @@ span {
 
 .terminal {
   background: #333;
-  top: -25px;
-  width: 600px;
+  top: 50px;
+  width: 400px;
   height: 300px;
-  margin: auto;
-  margin-top: 100px;
-  border: 1px solid black;
-  border-radius: 6px;
-  box-shadow: 10px 20px;
-}
-
-.overlay1 {
-  background: #333;
-  top: 20px;
-  left: 500px;
-  width: 600px;
-  height: 400px;
   margin: auto;
   margin-top: 100px;
   border: 1px solid black;
@@ -104,8 +81,8 @@ span {
 
 .tux {
   position: absolute;
-  top: 80%;
-  left: 90%;
+  top: 500px;
+  left: 80%;
 }
 
 .titlebar {
@@ -113,7 +90,7 @@ span {
   font-size: 20px;
   text-align: center;
   background-color: black;
-  color: rgb(121, 121, 121);
+  color: white;
   line-height: 20px;
   text-align: center;
   width: 100%;
@@ -239,14 +216,16 @@ h3 {
   color: black;
   background-color: rgb(104, 104, 104);
   font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
   margin: 20 auto;
   padding: 10px;
+  top: 5%;
+  left: -2%;
   position: relative;
-  width: 400px;
-  height: 320px;
+  width: 600px;
+  height: 400px;
 }
 
 .links {
@@ -259,4 +238,79 @@ h3 {
 .pointer {
   width: 20px;
   height: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  background-color: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.draggable {
+  background-color: yellow;
+  width: 90px;
+  height: 80px;
+  padding: 5px;
+  float: left;
+  margin: 0 10px 10px 0;
+  font-size: 0.9em;
+}
+.ui-widget-header p,
+.ui-widget-content p {
+  margin: 0;
+}
+#snaptarget {
+  height: 140px;
+}
+
+#resizable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+#resizable h3 {
+  text-align: center;
+  margin: 0;
 }
